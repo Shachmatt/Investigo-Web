@@ -3,7 +3,7 @@ import { fadeUp, stagger, viewportOnce } from '../anim.js';
 import { DiscordGlyph } from './Nav.jsx';
 import logo from '../assets/logo.png';
 
-const CONTACT = 'tabach.matej@gmail.com';
+const CONTACT = 'investigo.app.info@gmail.com';
 
 export default function Footer({ discordUrl }) {
   return (
@@ -67,7 +67,7 @@ export default function Footer({ discordUrl }) {
             >
               {CONTACT}
             </a>
-            <span>© {new Date().getFullYear()} InvestiGO · Spuštění na konci července 2026</span>
+            <span>© {new Date().getFullYear()} InvestiGO · Spuštění v polovině července 2026</span>
           </div>
         </motion.div>
       </motion.div>
