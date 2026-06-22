@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { fadeUp, stagger, viewportOnce } from '../anim.js';
 
 // App release: end of July 2026.
-const TARGET = new Date('2026-07-T23:59:59');
+const TARGET = new Date('2026-07-20T23:59:59');
 
 function getRemaining() {
   const diff = Math.max(0, TARGET.getTime() - Date.now());
@@ -51,7 +51,7 @@ export default function Countdown({ newsletterUrl }) {
           {t.done ? 'Aplikace je venku! 🎉' : 'Odpočet do spuštění'}
         </motion.h2>
         <motion.p variants={fadeUp} className="mt-3 text-ink/55">
-          Konec července 2026
+          POlovina července 2026
         </motion.p>
 
         <motion.div
