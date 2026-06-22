@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { fadeUp, stagger, viewportOnce } from '../anim.js';
 
 // App release: end of July 2026.
-const TARGET = new Date('2026-07-31T23:59:59');
+const TARGET = new Date('2026-07-T23:59:59');
 
 function getRemaining() {
   const diff = Math.max(0, TARGET.getTime() - Date.now());
@@ -24,7 +24,7 @@ const UNITS = [
   ['seconds', 'Sekund'],
 ];
 
-export default function Countdown() {
+export default function Countdown({ newsletterUrl }) {
   const [t, setT] = useState(getRemaining);
 
   useEffect(() => {
@@ -72,6 +72,23 @@ export default function Countdown() {
             </div>
           ))}
         </motion.div>
+
+        {newsletterUrl && (
+          <motion.div variants={fadeUp} className="mt-12 flex flex-col items-center gap-3">
+            <a
+              href={newsletterUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="group inline-flex items-center gap-2.5 rounded-full bg-primary px-7 py-3.5 text-base font-semibold text-white shadow-xl shadow-primary/25 transition-all hover:-translate-y-0.5 hover:bg-secondary"
+            >
+              <span aria-hidden>📩</span>
+              Upozorni mě na spuštění
+            </a>
+            <p className="text-sm text-ink/50">
+              Přihlas se k odběru a dej nám vědět, že máš zájem.
+            </p>
+          </motion.div>
+        )}
       </motion.div>
     </section>
   );

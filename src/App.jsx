@@ -12,6 +12,8 @@ import Countdown from './components/Countdown.jsx';
 import Footer from './components/Footer.jsx';
 
 const DISCORD_URL = 'https://discord.gg/etbbjD9yqp';
+const NEWSLETTER_URL =
+  'https://docs.google.com/forms/d/e/1FAIpQLSeRMQ36en9xWNWLGhhdqifmz8P8Qt7HqNUWQUAAPo8Nmzg2bA/viewform';
 
 export default function App() {
   return (
@@ -26,7 +28,7 @@ export default function App() {
         <StockDivider />
         <HowItWorks />
         <Impact />
-        <Countdown />
+        <Countdown newsletterUrl={NEWSLETTER_URL} />
         <StockDivider flip />
         <About />
       </main>
