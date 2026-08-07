@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zásady ochrany osobních údajů — InvestiGO</title>
+  <style>
+    :root {
+      --primary: #850f8d;
+      --ink: #36064d;
+      --lilac: #f2d2fe;
+      --butter: #f8f9d7;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+      color: var(--ink);
+      background: #fff;
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 48px 24px 96px;
+    }
+    header {
+      margin-bottom: 40px;
+    }
+    header .eyebrow {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--primary);
+      background: var(--lilac);
+      padding: 6px 14px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 32px;
+      margin: 0 0 8px;
+      color: var(--primary);
+    }
+    .updated {
+      color: #777;
+      font-size: 14px;
+    }
+    h2 {
+      font-size: 20px;
+      color: var(--primary);
+      margin-top: 40px;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--lilac);
+    }
+    p, li { font-size: 15.5px; }
+    ul { padding-left: 22px; }
+    li { margin-bottom: 6px; }
+    a { color: var(--primary); }
+    .contact-box {
+      background: var(--butter);
+      border-radius: 16px;
+      padding: 20px 24px;
+      margin-top: 16px;
+    }
+    .contact-box a { font-weight: 700; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      font-size: 14.5px;
+    }
+    th, td {
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid #eee;
+      vertical-align: top;
+    }
+    th { color: var(--primary); }
+    footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+      font-size: 13px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <span class="eyebrow">InvestiGO</span>
+      <h1>Zásady ochrany osobních údajů</h1>
+      <div class="updated">Poslední aktualizace: 7. srpna 2026</div>
+    </header>
+
+    <p>
+      Tyto zásady popisují, jaké osobní údaje aplikace <strong>InvestiGO</strong> shromažďuje,
+      proč je zpracovává a jaká práva v souvislosti s nimi máte. InvestiGO provozuje tým
+      Matěj Tabach, Filip Jenček a Jura Semerád (dále jen „my“, „InvestiGO“).
+    </p>
+
+    <h2>1. Jaké údaje shromažďujeme</h2>
+    <p>Při registraci a používání aplikace zpracováváme:</p>
+    <ul>
+      <li><strong>Účet:</strong> uživatelské jméno, e-mailová adresa a heslo (uložené pouze jako
+        nevratný hash, nikdy v čitelné podobě). Pokud se přihlásíš přes Google, zpracováváme
+        tvoje jméno, e-mail a jedinečné Google ID.</li>
+      <li><strong>Herní a studijní data:</strong> počet životů, zkušenostní body (XP), postup
+        v lekcích, mince, denní série (streak) a stav případných freezerů série.</li>
+      <li><strong>Poznámky:</strong> volitelný text, který si sám/sama napíšeš k jednotlivým
+        lekcím. Tato data vidíš pouze ty.</li>
+      <li><strong>Předplatné:</strong> stav a datum expirace tvého případného Premium předplatného.
+        Platební údaje (číslo karty apod.) nikdy nezpracováváme ani neukládáme my — platbu
+        zpracovává výhradně Google Play přes Google Play Billing.</li>
+      <li><strong>Technické údaje:</strong> běžné technické záznamy potřebné k provozu serveru
+        (např. časové razítko požadavku), a v případě reklam identifikátory zařízení
+        zpracovávané třetí stranou (viz bod 4).</li>
+    </ul>
+
+    <h2>2. K čemu údaje používáme</h2>
+    <ul>
+      <li>Provoz tvého účtu a přihlašování</li>
+      <li>Ukládání tvého postupu v lekcích, odměn a nastavení</li>
+      <li>Zasílání e-mailu s ověřovacím kódem při obnově zapomenutého hesla</li>
+      <li>Aktivace a správa Premium předplatného</li>
+      <li>Zobrazování reklam neplatícím uživatelům</li>
+      <li>Zlepšování a opravy aplikace</li>
+    </ul>
+    <p>Tvoje údaje neprodáváme a nesdílíme je za účelem marketingu třetích stran.</p>
+
+    <h2>3. Kde jsou údaje uložené</h2>
+    <p>
+      Účet a herní data uchováváme v databázi provozované na serverové infrastruktuře
+      (Render). Přístupové tokeny se v aplikaci ukládají zabezpečeně přímo na tvém zařízení
+      (Android Keystore / Secure Store) a nikdy neopouštějí zařízení jinak než šifrovaně
+      při komunikaci se serverem (HTTPS).
+    </p>
+
+    <h2>4. Služby třetích stran</h2>
+    <table>
+      <tr><th>Služba</th><th>Účel</th><th>Jaká data vidí</th></tr>
+      <tr>
+        <td>Google Sign-In</td>
+        <td>Přihlášení přes Google účet</td>
+        <td>Jméno, e-mail, Google ID</td>
+      </tr>
+      <tr>
+        <td>Google AdMob</td>
+        <td>Zobrazování reklam neplatícím uživatelům</td>
+        <td>Identifikátor reklamy zařízení; reklamy žádáme jako
+          nepersonalizované (bez sledování napříč aplikacemi)</td>
+      </tr>
+      <tr>
+        <td>Google Play Billing / RevenueCat</td>
+        <td>Zpracování plateb za Premium předplatné</td>
+        <td>Stav nákupu a datum expirace předplatného. Platební údaje
+          (karta) vidí pouze Google, nikdy ne my.</td>
+      </tr>
+      <tr>
+        <td>Resend</td>
+        <td>Odeslání e-mailu s kódem pro obnovu hesla</td>
+        <td>Tvoje e-mailová adresa a ověřovací kód</td>
+      </tr>
+    </table>
+
+    <h2>5. Uchovávání údajů</h2>
+    <p>
+      Údaje uchováváme po dobu existence tvého účtu. Pokud si přeješ účet a všechna
+      související data smazat, napiš nám na e-mail níže — vymažeme je bez zbytečného odkladu.
+    </p>
+
+    <h2>6. Zabezpečení</h2>
+    <p>
+      Hesla ukládáme výhradně jako hash (bcrypt), veškerá komunikace mezi aplikací a
+      serverem probíhá přes šifrované spojení (HTTPS) a přístup k účtu je chráněn
+      autentizačním tokenem (JWT) s omezenou platností.
+    </p>
+
+    <h2>7. Tvoje práva</h2>
+    <p>Jako uživatel z EU máš dle GDPR právo na:</p>
+    <ul>
+      <li>přístup ke svým osobním údajům,</li>
+      <li>opravu nepřesných údajů,</li>
+      <li>vymazání údajů („právo být zapomenut“),</li>
+      <li>omezení nebo námitku proti zpracování,</li>
+      <li>přenositelnost údajů,</li>
+      <li>podání stížnosti u <a href="https://www.uoou.cz" target="_blank" rel="noreferrer">Úřadu
+        pro ochranu osobních údajů (ÚOOÚ)</a>.</li>
+    </ul>
+    <p>Pro uplatnění kteréhokoli z těchto práv nás kontaktuj na e-mailu níže.</p>
+
+    <h2>8. Děti a mladiství</h2>
+    <p>
+      InvestiGO je vzdělávací aplikace zaměřená primárně na mladé lidi. Pokud je ti méně
+      než 15 let, používej aplikaci prosím se souhlasem a vědomím rodiče nebo zákonného
+      zástupce.
+    </p>
+
+    <h2>9. Změny těchto zásad</h2>
+    <p>
+      Tyto zásady můžeme čas od času aktualizovat, například při přidání nové funkce
+      aplikace. O zásadních změnách tě budeme informovat v aplikaci.
+    </p>
+
+    <h2>10. Kontakt</h2>
+    <div class="contact-box">
+      Máš dotaz ohledně svých údajů nebo těchto zásad? Napiš nám na
+      <a href="mailto:investigo.app.info@gmail.com">investigo.app.info@gmail.com</a>.
+    </div>
+
+    <footer>© 2026 InvestiGO</footer>
+  </div>
+</body>
+</html>
