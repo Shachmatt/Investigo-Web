@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smazání účtu a dat — InvestiGO</title>
+  <style>
+    :root {
+      --primary: #850f8d;
+      --ink: #36064d;
+      --lilac: #f2d2fe;
+      --butter: #f8f9d7;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+      color: var(--ink);
+      background: #fff;
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 48px 24px 96px;
+    }
+    header {
+      margin-bottom: 40px;
+    }
+    header .eyebrow {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--primary);
+      background: var(--lilac);
+      padding: 6px 14px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 32px;
+      margin: 0 0 8px;
+      color: var(--primary);
+    }
+    .updated {
+      color: #777;
+      font-size: 14px;
+    }
+    h2 {
+      font-size: 20px;
+      color: var(--primary);
+      margin-top: 40px;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--lilac);
+    }
+    p, li { font-size: 15.5px; }
+    ul, ol { padding-left: 22px; }
+    li { margin-bottom: 6px; }
+    a { color: var(--primary); }
+    .contact-box {
+      background: var(--butter);
+      border-radius: 16px;
+      padding: 20px 24px;
+      margin-top: 16px;
+    }
+    .contact-box a { font-weight: 700; }
+    .button {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 12px 22px;
+      border-radius: 999px;
+      background: var(--primary);
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .button:hover { background: var(--ink); }
+    .warning {
+      background: var(--lilac);
+      border-radius: 16px;
+      padding: 16px 20px;
+      margin-top: 16px;
+    }
+    footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+      font-size: 13px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <span class="eyebrow">InvestiGO</span>
+      <h1>Smazání účtu a dat</h1>
+      <div class="updated">Poslední aktualizace: 17. října 2026</div>
+    </header>
+
+    <p>
+      Svůj účet v aplikaci <strong>InvestiGO</strong> a všechna data s ním spojená můžeš
+      kdykoli smazat — buď přímo v aplikaci, nebo žádostí e-mailem, pokud aplikaci už
+      nemáš nainstalovanou.
+    </p>
+
+    <h2>1. Smazání přímo v aplikaci</h2>
+    <ol>
+      <li>Otevři aplikaci InvestiGO a přihlas se.</li>
+      <li>Ve spodní liště klepni na ikonu <strong>profilu</strong>.</li>
+      <li>Úplně dole klepni na <strong>Smazat účet</strong> a smazání potvrď.</li>
+    </ol>
+    <p>Účet a všechna data se smažou okamžitě.</p>
+
+    <h2>2. Žádost o smazání bez aplikace</h2>
+    <p>
+      Napiš nám z e-mailové adresy, se kterou jsi se do InvestiGO registroval/a (nebo kterou
+      používáš pro přihlášení přes Google), a do zprávy uveď své uživatelské jméno. Účet
+      a všechna data smažeme bez zbytečného odkladu, nejpozději do 30 dnů, a potvrdíme ti to
+      e-mailem.
+    </p>
+    <div class="contact-box">
+      E-mail pro žádosti o smazání:
+      <a href="mailto:investigo.app.info@gmail.com">investigo.app.info@gmail.com</a>
+      <br />
+      <a class="button" href="mailto:investigo.app.info@gmail.com?subject=Smaz%C3%A1n%C3%AD%20%C3%BA%C4%8Dtu%20InvestiGO&amp;body=Pros%C3%ADm%20o%20smaz%C3%A1n%C3%AD%20m%C3%A9ho%20%C3%BA%C4%8Dtu%20a%20v%C5%A1ech%20dat.%0AU%C5%BEivatelsk%C3%A9%20jm%C3%A9no%3A%20">Napsat žádost o smazání</a>
+    </div>
+
+    <h2>3. Co se smaže</h2>
+    <ul>
+      <li><strong>Účet:</strong> uživatelské jméno, e-mailová adresa, hash hesla a případné
+        propojení s Google účtem.</li>
+      <li><strong>Herní a studijní data:</strong> životy, XP, postup v lekcích, mince,
+        denní série (streak) a freezery série.</li>
+      <li><strong>Poznámky</strong> a tvoje verze shrnutí lekcí.</li>
+      <li><strong>Údaje o předplatném</strong> uložené u nás (stav a datum expirace Premium).</li>
+    </ul>
+    <p>Po smazání žádné z těchto dat neuchováváme a účet nelze obnovit.</p>
+
+    <h2>4. Co smazáním účtu nezanikne</h2>
+    <div class="warning">
+      <strong>Předplatné Premium se smazáním účtu nezruší.</strong> Předplatné spravuje
+      Google Play — zruš ho prosím nejdřív v
+      <a href="https://play.google.com/store/account/subscriptions" target="_blank" rel="noreferrer">Google Play → Platby a předplatná → Předplatná</a>,
+      jinak ti ho Google bude dál účtovat.
+    </div>
+    <p>
+      Záznamy o platbách vede Google Play podle svých vlastních pravidel; tyto údaje
+      nemáme k dispozici a nemůžeme je smazat za tebe.
+    </p>
+
+    <h2>5. Kontakt</h2>
+    <div class="contact-box">
+      Máš dotaz ke smazání účtu nebo ke svým údajům? Napiš nám na
+      <a href="mailto:investigo.app.info@gmail.com">investigo.app.info@gmail.com</a>.
+      Více o tom, jak s údaji zacházíme, najdeš v
+      <a href="privacy.html">Zásadách ochrany osobních údajů</a>.
+    </div>
+
+    <footer>© 2026 InvestiGO</footer>
+  </div>
+</body>
+</html>
